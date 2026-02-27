@@ -1,0 +1,11 @@
+# ── Installare sul PC (training) ──
+tensorflow>=2.13
+tensorflow-datasets
+librosa
+numpy
+scipy
+matplotlib
+scikit-learn
+pyaudio
+sounddevice
+tqdm

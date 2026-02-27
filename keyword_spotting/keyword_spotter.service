@@ -1,0 +1,20 @@
+[Unit]
+Description=Keyword Spotter (TFLite)
+After=network.target sound.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/root/keyword_spotting
+ExecStart=/usr/bin/python3 /home/root/keyword_spotting/inference/keyword_spotter.py
+Restart=on-failure
+RestartSec=5
+
+# variabili ambiente (aggiusta se usi un venv)
+Environment=PYTHONPATH=/home/root/keyword_spotting
+
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

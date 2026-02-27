@@ -1,0 +1,6 @@
+# ── Installare sulla STM32MP1 (inference) ──
+tflite-runtime
+numpy
+scipy
+pyaudio
+python-speech-features
